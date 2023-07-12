@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4mck1ag66d0n"]
+
+[ext_resource type="Script" path="res://scripts/moon.gd" id="1_5dvy6"]
+[ext_resource type="Texture2D" uid="uid://doafgshouc5jg" path="res://sprites/Moon.png" id="2_ahmvy"]
+
+[node name="Moon" type="AnimatableBody2D"]
+position = Vector2(320, 400)
+collision_layer = 3
+script = ExtResource("1_5dvy6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(11.1985, 11.4464)
+texture = ExtResource("2_ahmvy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(11.1985, 11.4464)
+polygon = PackedVector2Array(-9.01907, -7.42591, -3.48261, -6.9891, 0.267893, -6.0281, 0.267893, -6.0281, 3.57191, -6.9891, 9.01907, -7.51328, 11.9659, -8.47428, 15.9843, -10.4836, 20.7171, -13.9782, 22.503, -13.9782, 23.4853, -12.9298, 0.267893, 13.6287, -23.396, -13.0172, -22.503, -13.9782, -20.4492, -13.9782, -15.9843, -10.4836, -11.9659, -8.47428)
